@@ -22,7 +22,9 @@ function preload() {
 
     this.load.image('peixe', 'assets/peixes/peixinho_roxo.png')
 
-    this.load.image('baiacu', 'assets/peixes/baiacu.png')
+    this.load.image('alga1', 'assets/alga.png')
+
+    this.load.image('alga2', 'assets/alga.png')
 }
 
 function create() {
@@ -33,7 +35,9 @@ function create() {
     peixinho = this.add.image(400, 300, 'peixe')
     peixinho.setFlip(true, false);
 
-    this.add.image(100, 300, 'baiacu');
+    this.add.image(150, 500, 'alga1').setScale(0.5);
+
+    this.add.image(650, 500, 'alga2').setScale(0.5);
 }
 
 function update() { 
